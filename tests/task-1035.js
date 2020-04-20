@@ -1,6 +1,5 @@
 module.exports = {
     'Demo test' : function (browser) {
-      var listofelements; 
       browser
       .url('https://www.gmail.com')
       .assert.visible('input[type=email]')
@@ -10,13 +9,19 @@ module.exports = {
       .assert.visible('input[type=password]')
       .setValue('input[type=password]', 'PASSWORD')
       .click('div[id=passwordNext]')
+      .pause(2000)
       .useXpath() 
-      .click("//div[@class='J-J5-Ji J-JN-M-I-Jm']//div[@class='G-asx T-I-J3 J-J5-Ji']")
-      .click("//div[@class='J-N']//div[@class='J-N-Jz'][contains(text(),'Unread')]")
-      .elements('xpath',"//div[@class='J-N']//div[@class='J-N-Jz'][contains(text(),'Unread')]",function (elements){
-        listofelements=elements.value;
-        console.log(listofelements);
+      .elements('xpath', "//tr[@class='zA zE']", function (elements) {
+        console.log("The number of unread emails are : " + elements.value.length);
         })
-      
+
+        .elements('xpath',"//tr[@class='zA zE']",function (elements){
+          listofelements=elements.value;
+          console.log(listofelements);
+        })
+
+        .getText('xpath',"//tr[@class='zA zE']", function(result) {
+          console.log('Sender name and subject line : ', result.value);
+        })
     }
   };
