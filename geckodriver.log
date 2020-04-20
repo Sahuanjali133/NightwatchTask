@@ -1,0 +1,9 @@
+1587308558037	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/53/nn3090js5nl52b7mrpvq6yr40000gp/T/rust_mozprofile6mDEJQ"
+1587308558682	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587308559054	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587308559054	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587308559055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587308559055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587308561419	Marionette	INFO	Listening on port 64130
+1587308576567	Marionette	INFO	Stopped listening on port 64130
+JavaScript error: https://mail.google.com/_/scs/mail-static/_/js/k=gmail.main.en.WdQEwz7y5oE.O/am=V9bfI-GBwIvAl50R0AGA8cGoVNM-gPfiVNN_CJ5jcQA8xEDzM7-D-gAAAAAAAAAAAAAAAAAAAGAPaFgR/d=1/im=1/dg=0/ct=zgms/rs=AHGWq9CsBPlISuW1lmMnW2eoJ0sLaQMbtg/m=b, line 1093: NS_ERROR_NOT_INITIALIZED: 
