@@ -19,6 +19,6 @@
   "homepage": "https://github.com/Sahuanjali133/NightwatchTask#readme",
   "dependencies": {
     "geckodriver": "^1.19.1",
-    "nightwatch": "^1.3.4"
+    "nightwatch": "^1.7.13"
   }
 }
